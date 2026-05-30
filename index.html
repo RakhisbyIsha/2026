@@ -189,7 +189,41 @@ font-family:"Cormorant Garamond",serif;
 font-size:3rem;
 margin-bottom:10px;
 }
+.category-buttons{
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+margin-top:40px;
+}
 
+.category-btn{
+padding:18px 32px;
+background:rgba(255,255,255,.8);
+border-radius:999px;
+text-decoration:none;
+color:var(--text);
+font-weight:600;
+backdrop-filter:blur(15px);
+box-shadow:0 12px 30px rgba(0,0,0,.06);
+transition:.3s;
+}
+
+.category-btn:hover{
+transform:translateY(-5px);
+box-shadow:0 18px 40px rgba(0,0,0,.1);
+}
+
+.card img{
+width:100%;
+height:340px;
+object-fit:cover;
+transition:transform .6s ease;
+}
+
+.card:hover img{
+transform:scale(1.08);
+}
 @media(max-width:800px){
 h1{font-size:3.5rem}
 .story{grid-template-columns:1fr}
@@ -207,7 +241,7 @@ h1{font-size:3.5rem}
 Elegant, handcrafted rakhis designed with warmth, tradition and timeless beauty.
 Each piece is thoughtfully curated to celebrate the cherished bond between siblings.
 </p>
-<a href="#collection" class="btn">Explore Collection</a>
+<a href="#categories" class="btn">Explore Categories</a>
 </div>
 </section>
 
@@ -230,40 +264,125 @@ is chosen to make Raksha Bandhan memorable and special.
 </div>
 </section>
 
-<section id="collection">
-<h2 class="section-title">The Collection</h2>
-<p class="section-sub">
-A curated selection of beautiful rakhis. Replace these sample products with your actual catalogue.
-</p>
+<section id="categories">
+    <h2 class="section-title">Browse by Category</h2>
 
-<div class="catalogue">
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?w=800">
-<div class="card-content">
-<h3>Floral Pearl Rakhi</h3>
-<div class="price">₹199</div>
-</div>
-</div>
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1521572267360-ee0c2909d518?w=800">
-<div class="card-content">
-<h3>Designer Festive Rakhi</h3>
-<div class="price">₹249</div>
-</div>
-</div>
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=800">
-<div class="card-content">
-<h3>Premium Stone Rakhi</h3>
-<div class="price">₹299</div>
-</div>
-</div>
-
-</div>
+    <div class="category-buttons">
+        <a href="#couple" class="category-btn">💑 Couple Rakhis</a>
+        <a href="#bhai" class="category-btn">👦 Bhai Rakhis</a>
+        <a href="#kids" class="category-btn">🧸 Kids Rakhis</a>
+    </div>
 </section>
+
+<section id="couple">
+    <h2 class="section-title">Couple Rakhis</h2>
+    <p class="section-sub">
+        Elegant matching rakhi sets designed for Bhaiya & Bhabhi.
+    </p>
+
+    <div class="catalogue">
+
+        <div class="card">
+            <img src="images/couple1.jpg" alt="">
+            <div class="card-content">
+                <h3>Royal Pearl Couple Set</h3>
+                <div class="price">₹399</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="images/couple2.jpg" alt="">
+            <div class="card-content">
+                <h3>Designer Couple Rakhi</h3>
+                <div class="price">₹449</div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section id="bhai">
+    <h2 class="section-title">Bhai Rakhis</h2>
+    <p class="section-sub">
+        Traditional and modern rakhis crafted with elegance.
+    </p>
+
+    <div class="catalogue">
+
+        <div class="card">
+            <img src="images/bhai1.jpg" alt="">
+            <div class="card-content">
+                <h3>Classic Traditional Rakhi</h3>
+                <div class="price">₹199</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="images/bhai2.jpg" alt="">
+            <div class="card-content">
+                <h3>Premium Stone Rakhi</h3>
+                <div class="price">₹249</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="images/bhai3.jpg" alt="">
+            <div class="card-content">
+                <h3>Gold Finish Rakhi</h3>
+                <div class="price">₹299</div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section id="kids">
+    <h2 class="section-title">Kids Rakhis</h2>
+    <p class="section-sub">
+        Cute and playful rakhis that children absolutely love.
+    </p>
+
+    <div class="catalogue">
+
+        <div class="card">
+            <img src="images/kids1.jpg" alt="">
+            <div class="card-content">
+                <h3>Cartoon Rakhi</h3>
+                <div class="price">₹149</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="images/kids2.jpg" alt="">
+            <div class="card-content">
+                <h3>Superhero Rakhi</h3>
+                <div class="price">₹179</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="images/kids3.jpg" alt="">
+            <div class="card-content">
+                <h3>Teddy Rakhi</h3>
+                <div class="price">₹169</div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<div class="footer">
+    <h2>Celebrate the Bond</h2>
+    <p>Handcrafted with Love • Rakhis by Isha</p>
+
+    <br>
+
+    <p>
+        Instagram |
+        WhatsApp |
+        Surat, Gujarat
+    </p>
+</div>
 
 <div class="footer">
 <h2>Celebrate the Bond</h2>
