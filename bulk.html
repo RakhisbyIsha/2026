@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-B8JVLY68WB"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-B8JVLY68WB');
+</script>
+    
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rakhis by Isha</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<style>
+    a:link {
+  color: #4e4550;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #4e4550;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #4e4550;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: #4e4550;
+  background-color: transparent;
+  text-decoration: underline;
+}
+    .order-btn{
+display:inline-flex;
+align-items:center;
+gap:10px;
+margin-top:15px;
+padding:12px 22px;
+background:#25D366;
+color:white;
+text-decoration:none;
+font-weight:600;
+border-radius:999px;
+transition:all .3s ease;
+box-shadow:0 8px 20px rgba(37,211,102,.3);
+}
+
+.order-btn:hover{
+background:#20ba5a;
+transform:translateY(-3px);
+box-shadow:0 12px 25px rgba(37,211,102,.4);
+}
+
+.order-btn i{
+font-size:1.1rem;
+}
+:root{
+--cream:#fffaf7;
+--rose:#f7e2e7;
+--lavender:#efe6ff;
+--peach:#ffeede;
+--text:#4e4550;
+--gold:#b89158;
+}
+
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+
+body{
+font-family:Inter,sans-serif;
+background:
+radial-gradient(circle at top left,#fff,#fdf6f8 35%,#faf7ff 70%);
+color:var(--text);
+overflow-x:hidden;
+}
+
+.hero{
+min-height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+padding:40px;
+position:relative;
+text-align:center;
+}
+
+.hero::before{
+content:"";
+position:absolute;
+inset:0;
+background:
+radial-gradient(circle at 20% 20%,rgba(247,226,231,.6),transparent 30%),
+radial-gradient(circle at 80% 30%,rgba(239,230,255,.7),transparent 30%),
+radial-gradient(circle at 50% 80%,rgba(255,238,222,.8),transparent 35%);
+}
+
+.hero-content{
+position:relative;
+max-width:900px;
+padding:60px;
+backdrop-filter:blur(18px);
+background:rgba(255,255,255,.45);
+border:1px solid rgba(255,255,255,.5);
+border-radius:32px;
+box-shadow:0 20px 60px rgba(0,0,0,.08);
+}
+
+.small{
+letter-spacing:4px;
+text-transform:uppercase;
+font-size:.8rem;
+color:var(--gold);
+margin-bottom:18px;
+}
+
+h1{
+font-family:"Cormorant Garamond",serif;
+font-size:5rem;
+line-height:1;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:1.15rem;
+line-height:1.8;
+max-width:650px;
+margin:auto;
+}
+
+.btn{
+display:inline-block;
+margin-top:35px;
+padding:16px 34px;
+border-radius:999px;
+text-decoration:none;
+background:white;
+color:var(--text);
+font-weight:600;
+box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+section{
+max-width:1300px;
+margin:auto;
+padding:100px 24px;
+}
+
+.section-title{
+font-family:"Cormorant Garamond",serif;
+font-size:3.5rem;
+text-align:center;
+margin-bottom:16px;
+}
+
+.section-sub{
+text-align:center;
+max-width:650px;
+margin:0 auto 60px;
+line-height:1.8;
+}
+
+.catalogue{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:30px;
+}
+
+.card{
+background:rgba(255,255,255,.75);
+backdrop-filter:blur(12px);
+border-radius:28px;
+overflow:hidden;
+transition:.35s ease;
+box-shadow:0 12px 40px rgba(0,0,0,.06);
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+.card img{
+width:100%;
+height:340px;
+object-fit:cover;
+}
+
+.card-content{
+padding:24px;
+}
+
+.card h3{
+font-family:"Cormorant Garamond",serif;
+font-size:2rem;
+margin-bottom:10px;
+}
+
+.price{
+font-size:1.1rem;
+font-weight:600;
+color:var(--gold);
+}
+
+.story{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:50px;
+align-items:center;
+}
+
+.story-box{
+padding:50px;
+background:linear-gradient(135deg,#fff,#fff7fb);
+border-radius:30px;
+box-shadow:0 12px 40px rgba(0,0,0,.05);
+}
+
+.story h2{
+font-family:"Cormorant Garamond",serif;
+font-size:3rem;
+margin-bottom:15px;
+}
+
+.story p{
+line-height:2;
+}
+
+.footer{
+text-align:center;
+padding:80px 20px;
+background:linear-gradient(135deg,var(--rose),var(--lavender));
+}
+
+.footer h2{
+font-family:"Cormorant Garamond",serif;
+font-size:3rem;
+margin-bottom:10px;
+}
+.category-buttons{
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+margin-top:40px;
+}
+
+.category-btn{
+padding:18px 32px;
+background:rgba(255,255,255,.8);
+border-radius:999px;
+text-decoration:none;
+color:var(--text);
+font-weight:600;
+backdrop-filter:blur(15px);
+box-shadow:0 12px 30px rgba(0,0,0,.06);
+transition:.3s;
+}
+
+.category-btn:hover{
+transform:translateY(-5px);
+box-shadow:0 18px 40px rgba(0,0,0,.1);
+}
+
+.card img{
+width:100%;
+height:340px;
+object-fit:cover;
+transition:transform .6s ease;
+}
+
+.card:hover img{
+transform:scale(1.08);
+}
+@media(max-width:800px){
+h1{font-size:3.5rem}
+.story{grid-template-columns:1fr}
+.hero-content{padding:35px}
+}
+</style>
+</head>
+<body>
+
+<section class="hero">
+<div class="hero-content">
+<div class="small">Handcrafted Collection</div>
+<h1>Rakhis by Isha</h1>
+
+<section id="categories">
+    <h2 class="section-title">Browse by Category</h2>
+
+    <div class="category-buttons">
+        <a href="#couple" class="category-btn">💑 Couple Rakhis</a>
+        <a href="#bhai" class="category-btn">👦 Bhai Rakhis</a>
+        <a href="#bhabhi" class="category-btn">👩 Bhabhi Rakhis</a>
+        <a href="#kids" class="category-btn">🧸 Kids Rakhis</a>
+    </div>
+</section>
+
+<section id="couple">
+    <h2 class="section-title">Couple Rakhis</h2>
+    <p class="section-sub">
+        Elegant matching rakhi sets designed for Bhaiya & Bhabhi.
+    </p>
+    <br>
+
+    <div class="catalogue">
+
+        <div class="card">
+            <img src="images/couple1.jpeg" alt="">
+            <div class="card-content">
+                <div class="price">₹250</div>
+                <a href="https://wa.me/919726146998?text=Hi%20I%20want%20to%20order%20Rakhi"
+           class="order-btn">
+           Order on WhatsApp
+                </a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="images/couple2.jpeg" alt="">
+            <div class="card-content">
+                 <div class="price">₹250</div>
+                 <a href="https://wa.me/919726146998?text=Hi%20I%20want%20to%20order%20Rakhi"
+           class="order-btn">
+           Order on WhatsApp
+                </a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="images/couple4.jpeg" alt="">
+            <div class="card-content">
+              <div class="price">₹250</div>
+                 <a href="https://wa.me/919726146998?text=Hi%20I%20want%20to%20order%20Rakhi"
+           class="order-btn">
+           Order on WhatsApp
+                </a>
+            </div>
+            </div>
+
+    
+            <div class="card">
+            <img src="images/couple5.jpeg" alt="">
+            <div class="card-content">
+              <div class="price">₹220</div>
+                 <a href="https://wa.me/919726146998?text=Hi%20I%20want%20to%20order%20Rakhi"
+           class="order-btn">
+           Order on WhatsApp
+                </a>
+            </div>
+             </div>
+    
+                <div class="card">
+            <img src="images/couple6.jpeg" alt="">
+            <div class="card-content">
+              <div class="price">₹220</div>
+                 <a href="https://wa.me/919726146998?text=Hi%20I%20want%20to%20order%20Rakhi"
+           class="order-btn">
+           Order on WhatsApp
+                </a>
+            </div>
+          </div>
+     
+                    
+                    
+                    <div class="card">
+            <img src="images/couple7.jpeg" alt="">
+            <div class="card-content">
+              <div class="price">₹220</div>
+                 <a href="https://wa.me/919726146998?text=Hi%20I%20want%20to%20order%20Rakhi"
+           class="order-btn">
+           Order on WhatsApp
+                </a>
+            </div>  
+            </div>
+                        
+                    <div class="card">
+            <img src="images/couple8.jpeg" alt="">
+            <div class="card-content">
+              <div class="price">₹220</div>
+                 <a href="https://wa.me/919726146998?text=Hi%20I%20want%20to%20order%20Rakhi"
+           class="order-btn">
+           Order on WhatsApp
+                </a>
+            </div>
+            </div>
+                        
+                    <div class="card">
+            <img src="images/couple9.jpeg" alt="">
+            <div class="card-content">
+              <div class="price">₹220</div>
+                 <a href="https://wa.me/919726146998?text=Hi%20I%20want%20to%20order%20Rakhi"
+           class="order-btn">
+           Order on WhatsApp
+                </a>
+            </div>
+            </div>
+                        
+                    <div class="card">
+            <img src="images/couple10.jpeg" alt="">
+            <div class="card-content">
+              <div class="price">₹250</div>
+                 <a href="https://wa.me/919726146998?text=Hi%20I%20want%20to%20order%20Rakhi"
+           class="order-btn">
+           Order on WhatsApp
+                </a>
+            </div>
+            </div>
+        
+                    <div class="card">
+            <img src="images/couple11.jpeg" alt="">
+            <div class="card-content">
+              <div class="price">₹220</div>
+                 <a href="https://wa.me/919726146998?text=Hi%20I%20want%20to%20order%20Rakhi"
+           class="order-btn">
+           Order on WhatsApp
+                </a>
+            </div>
+            </div>
+        <div class="card">
+            <img src="images/couple12.jpeg" alt="">
+            <div class="card-content">
+              <div class="price">₹220</div>
+                 <a href="https://wa.me/919726146998?text=Hi%20I%20want%20to%20order%20Rakhi"
+           class="order-btn">
+           Order on WhatsApp
+                </a>
+            </div>
+            </div>
+                    <div class="card">
+            <img src="images/couple13.jpeg" alt="">
+            <div class="card-content">
+              <div class="price">₹220</div>
+                 <a href="https://wa.me/919726146998?text=Hi%20I%20want%20to%20order%20Rakhi"
+           class="order-btn">
+           Order on WhatsApp
+                </a>
+            </div>
+            </div> 
+                     <div class="card">
+            <img src="images/couple14.jpeg" alt="">
+            <div class="card-content">
+              <div class="price">₹220</div>
+                 <a href="https://wa.me/919726146998?text=Hi%20I%20want%20to%20order%20Rakhi"
+           class="order-btn">
+           Order on WhatsApp
+                </a>
+            </div>
+            </div>
+                    <div class="card">
+            <img src="images/couple15.jpeg" alt="">
+            <div class="card-content">
+              <div class="price">₹220</div>
+                 <a href="https://wa.me/919726146998?text=Hi%20I%20want%20to%20order%20Rakhi"
+           class="order-btn">
+           Order on WhatsApp
+                </a>
+            </div>
+            </div>            
+                    <div class="card">
+            <img src="images/couple16.jpeg" alt="">
+            <div class="card-content">
+              <div class="price">₹220</div>
+                 <a href="https://wa.me/919726146998?text=Hi%20I%20want%20to%20order%20Rakhi"
+           class="order-btn">
+           Order on WhatsApp
+                </a>
+            </div>
+            </div>
+                    <div class="card">
+            <img src="images/couple17.jpeg" alt="">
+            <div class="card-content">
+              <div class="price">₹220</div>
+                 <a href="https://wa.me/919726146998?text=Hi%20I%20want%20to%20order%20Rakhi"
+           class="order-btn">
+           Order on WhatsApp
+                </a>
+            </div>
+            </div>
+                    <div class="card">
+            <img src="images/couple18.jpeg" alt="">
+            <div class="card-content">
+              <div class="price">₹220</div>
+                 <a href="https://wa.me/919726146998?text=Hi%20I%20want%20to%20order%20Rakhi"
+           class="order-btn">
+           Order on WhatsApp
+                </a>
+            </div>
+            </div>
+                    <div class="card">
+            <img src="images/couple19.jpeg" alt="">
+            <div class="card-content">
+              <div class="price">₹220</div>
+                 <a href="https://wa.me/919726146998?text=Hi%20I%20want%20to%20order%20Rakhi"
+           class="order-btn">
+           Order on WhatsApp
+                </a>
+            </div>
+            </div>
+                <div class="card">
+            <img src="images/couple20.jpeg" alt="">
+            <div class="card-content">
+              <div class="price">₹220</div>
+                 <a href="https://wa.me/919726146998?text=Hi%20I%20want%20to%20order%20Rakhi"
+           class="order-btn">
+           Order on WhatsApp
+                </a>
+            </div>
+            </div>
+
+    </div>
+</section>
+
+<section id="bhai">
+    <h2 class="section-title">Bhai Rakhis</h2>
+    <p class="section-sub">
+    </p>
+     <br>
+
+    <div class="catalogue">
+
+        <div class="card">
+            <img src="images/bhai1.jpeg" alt="">
+            <div class="card-content">
+                <div class="price">₹80</div>
+                <a href="https://wa.me/919726146998?text=Hi%20I%20want%20to%20order%20Rakhi"
+           class="order-btn">
+           Order on WhatsApp
+                </a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="images/bhai2.jpeg" alt="">
+            <div class="card-content">
+                <div class="price">₹70</div>
+                 <a href="https://wa.me/919726146998?text=Hi%20I%20want%20to%20order%20Rakhi"
+           class="order-btn">
+           Order on WhatsApp
+                </a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="images/bhai3.jpeg" alt="">
+            <div class="card-content">
+                <div class="price">₹80</div>
+                <a href="https://wa.me/919726146998?text=Hi%20I%20want%20to%20order%20Rakhi"
+           class="order-btn">
+           Order on WhatsApp
+                </a>
+            </div>
+        </div>
+
+    </div>
+</section>
+    <section id="bhabhi">
+    <h2 class="section-title">Bhabhi Rakhis</h2>
+    <p class="section-sub">
+    </p>
+     <br>
+
+    <div class="catalogue">
+
+        <div class="card">
+            <img src="images/bhabhi1.jpeg" alt="">
+            <div class="card-content">
+                <div class="price">₹160</div>
+                <a href="https://wa.me/919726146998?text=Hi%20I%20want%20to%20order%20Rakhi"
+           class="order-btn">
+           Order on WhatsApp
+                </a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="images/bhabhi2.jpeg" alt="">
+            <div class="card-content">
+                <div class="price">₹300</div>
+                 <a href="https://wa.me/919726146998?text=Hi%20I%20want%20to%20order%20Rakhi"
+           class="order-btn">
+           Order on WhatsApp
+                </a>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section id="kids">
+    <h2 class="section-title">Kids Rakhis</h2>
+    <p class="section-sub">
+        Cute and playful rakhis that children absolutely love.
+    </p>
+     <br>
+
+    <div class="catalogue">
+
+        <div class="card">
+            <img src="images/kids1.jpeg" alt="">
+            <div class="card-content">
+             
+                <div class="price">₹100</div>
+                <a href="https://wa.me/919726146998?text=Hi%20I%20want%20to%20order%20Rakhi"
+           class="order-btn">
+           Order on WhatsApp
+                </a>
+            </div>
+            </div>
+
+        <div class="card">
+            <img src="images/kids2.jpeg" alt="">
+            <div class="card-content">
+              
+                <div class="price">₹100</div>
+                 <a href="https://wa.me/919726146998?text=Hi%20I%20want%20to%20order%20Rakhi"
+           class="order-btn">
+           Order on WhatsApp
+                </a>
+            </div>
+            </div>
+
+        <div class="card">
+            <img src="images/kids3.jpeg" alt="">
+            <div class="card-content">
+         
+                <div class="price">₹100</div>
+                 <a href="https://wa.me/919726146998?text=Hi%20I%20want%20to%20order%20Rakhi"
+           class="order-btn">
+           Order on WhatsApp
+                </a>
+            </div>
+            </div>
+            <div class="card">
+            <img src="images/kids4.jpeg" alt="">
+            <div class="card-content">
+         
+                <div class="price">₹100</div>
+                 <a href="https://wa.me/919726146998?text=Hi%20I%20want%20to%20order%20Rakhi"
+           class="order-btn">
+           Order on WhatsApp
+                </a>
+            </div>
+            </div>
+
+    </div>
+</section>
+
+
+<div class="footer">
+<h2>Celebrate the Bond</h2>
+<p>
+    <a href="https://wa.me/919726146998" target="_blank">WhatsApp</a><br>
+      <a href="https://instagram.com/rakhi_house2025" target="_blank">Instagram</a>
+    <br>
+    &copy; 2026 Rakhis by Isha. All rights reserved.
+</p>
+</div>
+
+</body>
+</html>
